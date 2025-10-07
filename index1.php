@@ -28,17 +28,17 @@ if (!isset($_SESSION['username'])) {
 <body>
     <?php include '../config/connection.php'; ?>
     <div class="d-flex justify-content-center m-3">
-        <a href="../src/views/createformaddreserva.php" class="btn btn-primary me-3">
+        <a href="createformaddreserva.php" class="btn btn-primary me-3">
             <i class="bi bi-calendar-plus"></i> Adicionar Reserva
         </a>
-        <a href="../src/views/createformadduser.php" class="btn btn-primary me-3">
+        <a href="createformadduser.php" class="btn btn-primary me-3">
             <i class="bi bi-calendar-plus"></i> Registar Novo Utilizador
         </a>
-        <a href="../src/controller/logout.php" class="btn btn-primary">
+        <a href="logout.php" class="btn btn-primary">
             <i class="bi bi-logout"></i> Logout
         </a>
     </div>
-    <?php include '../src/views/reservas.php'; ?>
+    <?php include 'reservas.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
