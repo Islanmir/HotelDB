@@ -1,7 +1,7 @@
 <?php
 $HOSTNAME = "localhost";
 $USERNAME = "root";
-$PASSWORD = "trplm1980";
+$PASSWORD = "";
 $DBNAME = "hoteldb";
 
 mysqli_report(MYSQLI_REPORT_STRICT);
