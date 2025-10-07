@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $mensagem = "O funcionário " . $row["username"] . " efetuou login em " . date("d/m/Y H:i:s");
                 enviar_email("trplm1980@gmail.com", "Administrador", $assunto, $mensagem);
 
-                header("Location: ../public/index1.php");
+                header("Location: index1.php");
                 exit();
             } else {
                 echo "Usuário ou senha inválidos.";
@@ -125,7 +125,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <button type="submit" class="btn btn-primary w-100">Login</button>
 
                             <div class="text-center mt-3">
-                                <a href="../src/views/recoverpass.php" class="btn btn-link">Esqueci-me da Password</a>
+                                <a href="recoverpass.php" class="btn btn-link">Esqueci-me da Password</a>
                             </div>
                         </form>
                     </div>

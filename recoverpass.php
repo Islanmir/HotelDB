@@ -11,7 +11,7 @@ if( $_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['email'])) {
    mysqli_stmt_bind_param($query, "ss", $codigo_aleatorio, $email);
 
    if(mysqli_stmt_execute($query) && mysqli_stmt_affected_rows($query) > 0) {
-       $link_recuperação="http://localhost/HotelDB/src/views/resetpass.php?code=" . $codigo_aleatorio;
+       $link_recuperação="http://localhost/HotelDB/resetpass.php?code=" . $codigo_aleatorio;
        $assunto = "Recuperar password";
        $mensagem = "Clique no link para redifinir a sua password: <a href=".$link_recuperação. ">Redefinir password</a>. Este link é válido por 5 minutos.";
        enviar_email($email, "usuario", $assunto, $mensagem);

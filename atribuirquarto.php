@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $quarto = $_POST["quarto"];
     $update = "UPDATE reservas SET quarto = '$quarto' WHERE id = $id";
     mysqli_query($conn, $update);
-    header("Location: ../public/index1.php");
+    header("Location:index1.php");
     exit;
 }
 ?>
@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <style>
         body {
-            background-image: url('../public/pousada.jpg');
+            background-image: url('pousada.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
@@ -81,8 +81,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <div class="btn-group-custom mt-4">
                 <button type="submit" class="btn btn-success w-100">Guardar</button>
-                <a href="../public/index1.php" class="btn btn-secondary w-100">Cancelar</a>
-                <a href="../public/index1.php" class="btn btn-outline-light w-100" style="background-color:#0d6efd; color:white;">Voltar</a>
+                <a href="index1.php" class="btn btn-secondary w-100">Cancelar</a>
+                <a href="index1.php" class="btn btn-outline-light w-100" style="background-color:#0d6efd; color:white;">Voltar</a>
             </div>
         </form>
     </div>

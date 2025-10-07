@@ -31,7 +31,7 @@ $result = mysqli_query($conn, $query);
                     // Campo Quarto — mostra "Atribuir Quarto" se estiver vazio
                     if (empty($row["quarto"])) {
                         echo "<td>
-                                <a href='../src/views/atribuirquarto.php?id=".$row["id"]."' 
+                                <a href='atribuirquarto.php?id=".$row["id"]."' 
                                    class='btn btn-warning btn-sm'>
                                    Atribuir Quarto
                                 </a>
@@ -46,13 +46,13 @@ $result = mysqli_query($conn, $query);
                     // Botões estado
                     if ($row["estado"] == "cancelado") {
                         echo "<td>
-                                <a href='../src/controller/cancelar.php?id=".$row["id"]."&estado=ativo' class='btn btn-sm' style='background-color: #7CFC98; color: #fff;'>
+                                <a href='cancelar.php?id=".$row["id"]."&estado=ativo' class='btn btn-sm' style='background-color: #7CFC98; color: #fff;'>
                                     Ativar
                                 </a>
                               </td>";
                     } else {
                         echo "<td>
-                                <a href='../src/controller/cancelar.php?id=".$row["id"]."&estado=cancelado' class='btn btn-sm' style='background-color: #0d6efd; color: #fff;'>
+                                <a href='cancelar.php?id=".$row["id"]."&estado=cancelado' class='btn btn-sm' style='background-color: #0d6efd; color: #fff;'>
                                     Cancelar
                                 </a>
                               </td>";
@@ -62,10 +62,10 @@ $result = mysqli_query($conn, $query);
                     echo "<td>".($row["employeeName"] ?? "(API)")."</td>";
 
                     // Link editar
-                    echo "<td><a href='../src/views/updateform.php?id=".$row["id"]."'><i class='bi bi-pencil' style='color: lime;'></i></a></td>";
+                    echo "<td><a href='updateform.php?id=".$row["id"]."'><i class='bi bi-pencil' style='color: lime;'></i></a></td>";
 
                     // Link eliminar
-                    echo "<td><a href='../src/controller/delete.php?id=".$row["id"]."' onclick='return confirm(\"Tens a certeza que queres eliminar esta reserva?\");'>
+                    echo "<td><a href='delete.php?id=".$row["id"]."' onclick='return confirm(\"Tens a certeza que queres eliminar esta reserva?\");'>
                             <i class='bi bi-trash text-danger'></i></a></td>";
 
                     echo "</tr>";

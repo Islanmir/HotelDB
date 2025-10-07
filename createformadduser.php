@@ -2,7 +2,7 @@
 <html lang="en">
 <style>
     body {
-        background-image: url('../public/pousada.jpg'); 
+        background-image: url('pousada.jpg'); 
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -22,7 +22,7 @@
 </head>
 <body>
 
-    <form action="../src/controller/adduser.php" method="post" class="container mt-5">
+    <form action="adduser.php" method="post" class="container mt-5">
         <div class="mb-3">
             <label for="username" class="form-label">Username:</label>
             <input type="text" id="username" name="username" class="form-control" placeholder="Username" required>
@@ -42,7 +42,7 @@
         <button type="submit" class="btn btn-success w-100 mb-2">
             <i class="bi bi-plus-circle"></i> Adicionar Utilizador
         </button>
-        <a href="../public/index1.php" class="btn btn-secondary w-100">
+        <a href="index1.php" class="btn btn-secondary w-100">
             <i class="bi bi-arrow-left-circle"></i> Voltar ao Início
         </a>
 </body>

@@ -3,7 +3,7 @@
 <html lang="en">
 <style>
     body {
-        background-image: url('../public/pousada.jpg'); 
+        background-image: url('pousada.jpg'); 
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 <body>
-    <form action="../src/controller/addreserva.php" method="post" class="container mt-5">
+    <form action="addreserva.php" method="post" class="container mt-5">
         <div class="mb-3">
             <label for="nome" class="form-label">Nome:</label>
             <input type="text" id="nome" name="nome" class="form-control" placeholder="Nome" required>
@@ -46,7 +46,7 @@
         <button type="submit" class="btn btn-success w-100 mb-2">
             <i class="bi bi-plus-circle"></i> Adicionar Reserva
         </button>
-        <a href="../public/index1.php" class="btn btn-secondary w-100">
+        <a href="index1.php" class="btn btn-secondary w-100">
             <i class="bi bi-arrow-left-circle"></i> Voltar ao Início
         </a>
     </form>

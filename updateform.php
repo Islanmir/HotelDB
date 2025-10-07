@@ -22,7 +22,7 @@
 <html lang="en">
 <style>
     body {
-        background-image: url('../public/piscina.jpg'); 
+        background-image: url('piscina.jpg'); 
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -40,7 +40,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
 <body>
-    <form action="../src/controller/update.php" method="post" class="container mt-5">
+    <form action="update.php" method="post" class="container mt-5">
         <div class="mb-3">
             <input type="hidden" id="id" name="id" value="<?php echo $data["id"];?>" >
         </div>
@@ -72,7 +72,7 @@
         <button type="submit" class="btn btn-success w-100 mb-2">
             <i class="bi bi-plus-circle"></i> Actualizar Reserva
         </button>
-        <a href="../public/index1.php" class="btn btn-secondary w-100">
+        <a href="index1.php" class="btn btn-secondary w-100">
             <i class="bi bi-arrow-left-circle"></i> Voltar ao Início
         </a>
     </form>

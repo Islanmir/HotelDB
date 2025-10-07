@@ -63,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['new_password'], $_POST
                             <div class="alert alert-success">
                                 <?php echo $success; ?>
                                 <div class="mt-3 text-center">
-                                    <a href="../public/login.php" class="btn btn-success">Voltar para Login</a>
+                                    <a href="login.php" class="btn btn-success">Voltar para Login</a>
                                 </div>
                             </div>
                         <?php elseif (!empty($error)): ?>
@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['new_password'], $_POST
                         <?php endif; ?>
 
 
-                        <form action="../src/views/resetpass.php" method="post">
+                        <form action="resetpass.php" method="post">
                             <div class="mb-3">
                                 <label for="new_password" class="form-label">Nova Password:</label>
                                 <input type="password" class="form-control" id="new_password" name="new_password" required>
