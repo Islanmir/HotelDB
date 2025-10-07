@@ -9,7 +9,7 @@ if (isset($_GET["id"])) {
 
     if (mysqli_query($conn, $sql)) {
         // Volta para a listagem de reservas
-        header("Location: ../public/index1.php?msg=apagado");
+        header("Location: index.php?msg=apagado");
         exit;
     } else {
         echo "Erro ao eliminar: " . mysqli_error($conn);

@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             if (mysqli_stmt_execute($stmt)) {
                 if (mysqli_stmt_affected_rows($stmt) > 0) {
-                    header("Location: ../public/index1.php");
+                    header("Location: index.php");
                     exit();
                 } else {
                     echo "Nenhum Cliente encontrado com o ID especificado.";

@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $_POST["nome"], $_POST["quarto"], $_POST["checkin"], $_POST["checkout"], $employeeID);
 
             if (mysqli_stmt_execute($stmt)) {
-                header("Location: ../public/index1.php");
+                header("Location:index.php");
                 exit;
             } else {
                 echo "Erro ao executar: " . mysqli_stmt_error($stmt);

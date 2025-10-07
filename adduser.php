@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             mysqli_stmt_bind_param($stmt, "ssss", $_POST["username"], $hashedPassword, $_POST["employeeName"], $_POST["email"]);
 
             if (mysqli_stmt_execute($stmt)) {
-                header("Location: ../public/index1.php");
+                header("Location: index.php");
                 exit;
             } else {
                 echo "Erro ao executar: " . mysqli_stmt_error($stmt);

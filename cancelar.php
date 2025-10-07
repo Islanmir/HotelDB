@@ -13,7 +13,7 @@ if (isset($_GET["id"]) && isset($_GET["estado"])) {
 
         enviar_email("trplm1980@gmail.com","Raquel Monteiro", "Actualização de Reserva", "Uma reserva foi atualizada com sucesso.");
 
-        header("Location: ../public/index1.php"); // volta à listagem
+        header("Location: index.php"); // volta à listagem
         exit;
     } else {
         echo "Erro ao atualizar: " . mysqli_error($conn);

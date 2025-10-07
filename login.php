@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $mensagem = "O funcionário " . $row["username"] . " efetuou login em " . date("d/m/Y H:i:s");
                 enviar_email("trplm1980@gmail.com", "Administrador", $assunto, $mensagem);
 
-                header("Location: index1.php");
+                header("Location: index.php");
                 exit();
             } else {
                 echo "Usuário ou senha inválidos.";

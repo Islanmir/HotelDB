@@ -42,7 +42,7 @@
         <button type="submit" class="btn btn-success w-100 mb-2">
             <i class="bi bi-plus-circle"></i> Adicionar Utilizador
         </button>
-        <a href="index1.php" class="btn btn-secondary w-100">
+        <a href="index.php" class="btn btn-secondary w-100">
             <i class="bi bi-arrow-left-circle"></i> Voltar ao Início
         </a>
 </body>
